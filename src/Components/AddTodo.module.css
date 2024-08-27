@@ -1,0 +1,28 @@
+.inputContainer {
+  width: 100%; /* Ensure inputs take full width of their column */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer:focus {
+  border-color: #007bff; /* Highlight on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.todoButton {
+  width: 100%; /* Ensure the button takes full width of its column */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todoButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
