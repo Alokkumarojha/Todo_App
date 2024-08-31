@@ -1,0 +1,23 @@
+input {
+  width: 100%;
+}
+.items-container {
+  text-align: left;
+}
+.todoRow {
+  margin: 10px 5px;
+}
+
+.todoButton {
+  min-width: 80px;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}

@@ -1,9 +1,26 @@
+import "./App.css";
+import TodoItems from "./Components/TodoItems";
+import AddTodo from "./Components/AddTodo";
+import AppName from "./Components/AppName";
+
 function App() {
+  const todoItem = [
+    {
+      Name: "Buy Milk",
+      Date: "24/08/2024",
+    },
+    {
+      Name: "Go to collage",
+      Date: "24/08/2024",
+    },
+  ];
   return (
     <>
-      <h1>This is my awesome web page</h1>
-      <p>This is my paragraph of awesome web page.</p>
-      <button>click me</button>
+      <center className="todo-container">
+        <AppName />
+        <AddTodo></AddTodo>
+        <TodoItems todoItems={todoItem}></TodoItems>
+      </center>
     </>
   );
 }
