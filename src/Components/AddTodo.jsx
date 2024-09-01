@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./AddTodo.module.css";
+import { RiApps2AddFill } from "react-icons/ri";
 
 const AddTodo = ({ onNewItem }) => {
-  const [todoName, setTodoName] = useState();
-  const [todoDate, setTodoDate] = useState();
+  const [todoName, setTodoName] = useState("");
+  const [todoDate, setTodoDate] = useState("");
 
   const handleNameChange = (event) => {
     setTodoName(event.target.value);
@@ -45,7 +46,7 @@ const AddTodo = ({ onNewItem }) => {
             type="button"
             className="btn btn-success todoButton"
           >
-            Add
+            <RiApps2AddFill />
           </button>
         </div>
       </div>
